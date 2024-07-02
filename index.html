@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hi,👋 let's have some Fun ! </h1>
+    <hr>
+    <p id="heading">Rock Paper Scissors</p>
+  
+    <button onclick="
+            pickComputerMove();
+            let result = '';
+
+            if(computerMove === 'Rock'){
+                result = 'Tie.';
+            }
+            else if(computerMove === 'Paper'){
+                result = 'You lose.😔👎';
+            }
+            else if(computerMove === 'Scissors'){
+                result = 'You win.🥳🎉';
+            }
+           
+            alert(`You picked Rock , Computer picked ${computerMove}. ${result}`)
+    ">🤘</button>
+
+    <button onclick="
+        
+            pickComputerMove();
+            let result = '';
+
+            if(computerMove === 'Rock'){
+                result = 'You win.🥳🎉';
+            }
+            else if(computerMove === 'Paper'){
+                result = 'Tie.';
+            }
+            else if(computerMove === 'Scissors'){
+                result = 'You lose.😔👎';
+            }
+           
+            alert(`You picked Paper , Computer picked ${computerMove}. ${result}`)
+    ">✋</button>
+
+    <button onclick="
+            pickComputerMove();
+            let result = '';
+
+            if(computerMove === 'Rock'){
+                result = 'Tie.';
+            }
+            else if(computerMove === 'Paper'){
+                result = 'You lose.😔👎';
+            }
+            else if(computerMove === 'Scissors'){
+                result = 'You win.🥳🎉';
+            }
+           
+            alert(`You picked Rock , Computer picked ${computerMove}. ${result}`)
+    ">✌️</button>
+     <div id="knowAboutSymbols">
+        <p><b>Incase, if you are not familier with symbols/emojies :</b> </p>
+        <p>🤘&#8594;Rock </p>
+        <p>✋&#8594;Paper</p>
+        <p>✌️&#8594;Scissors</p>
+     </div>
+
+     <h3>For Source code 👇 </h3>
+     <a href="https://github.com/AjitYadaav" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <script src="script.js"></script>
+</body>
+</html> 
